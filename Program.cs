@@ -93,7 +93,7 @@
                 Console.WriteLine("Employee 7 object does not exist in the list.");
             }
 
-            Employee male = employeesList.Find(employee => employee.Gender == "Male");  
+            Employee male = employeesList.Find(employee => employee.Gender == "Male"); // finds first object with the gender "male"
 
 
             if (male != null)
