@@ -84,7 +84,7 @@
             employeesList.Add(employee9);
             employeesList.Add(employee10);
 
-            if (employeesList.Contains(employee7))
+            if (employeesList.Contains(employee7)) //contains() finds specific object 
             {
                 Console.WriteLine("Employee 7 object exists in the list.");
             }
@@ -93,7 +93,7 @@
                 Console.WriteLine("Employee 7 object does not exist in the list.");
             }
 
-            Employee male = employeesList.Find(employee => employee.Gender == "Male");
+            Employee male = employeesList.Find(employee => employee.Gender == "Male");  
 
 
             if (male != null)
