@@ -49,7 +49,17 @@
             {
                 Console.WriteLine("Employee 7 object does not exist in the list.");
             }
-            
+
+            Employee male = employeesList.Find(employee => employee.Gender == "Male");
+
+
+            if (male != null)
+            {
+                Console.WriteLine($"Namn:{male.Name}. " +
+                    $"Kön:{male.Gender}. " +
+                    $"ID nr:{male.Id}. " +
+                    $"Lön:{male.Salary}kr. ");
+            }
         }
     }
 }
