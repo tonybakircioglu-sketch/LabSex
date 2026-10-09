@@ -43,15 +43,14 @@
                 "\nRetrive using pop method");
 
             while (employees.Count > 0) // Loops through until stack is empty 
-            foreach (Employee employee in employees)
             {
-                Employee person = employees.Pop(); //returns last object before it removes it from the stack
+                Employee employee = employees.Pop(); //returns last object before it removes it from the stack
 
                 Console.WriteLine(
-                  $"\nName:{person.Name} - " +
-                  $" Gender:{person.Gender} - " +
-                  $" ID:{person.Id} - " +
-                  $" Salary:{person.Salary}kr - " +
+                  $"\nName:{employee.Name} - " +
+                  $" Gender:{employee.Gender} - " +
+                  $" ID:{employee.Id} - " +
+                  $" Salary:{employee.Salary}kr - " +
                   $" Items left in stack: {employees.Count}\n");
 
 
@@ -75,13 +74,7 @@
                  $" ID:{topEmployee.Id} - " +
                  $" Salary:{topEmployee.Salary}kr - " +
                  $" Items left in stack: {employees.Count}\n");
-            List<Employee> employeesList = new List<Employee>(); //creates list 
-
-            employeesList.Add(employee6); //adds objects to list
-            employeesList.Add(employee7);
-            employeesList.Add(employee8);
-            employeesList.Add(employee9);
-            employeesList.Add(employee10);
+        
 
             if (employeesList.Contains(employee7))
             {
