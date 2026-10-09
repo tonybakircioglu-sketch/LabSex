@@ -41,6 +41,15 @@
             employeesList.Add(employee9);
             employeesList.Add(employee10);
 
+            if (employeesList.Contains(employee7))
+            {
+                Console.WriteLine("Employee 7 object exists in the list.");
+            }
+            else
+            {
+                Console.WriteLine("Employee 7 object does not exist in the list.");
+            }
+            
         }
     }
 }
