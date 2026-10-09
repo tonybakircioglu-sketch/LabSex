@@ -11,6 +11,8 @@
             Employee employee5 = new Employee(14568, 38000, "Anna", "Female");
 
 
+
+
             Stack<Employee> employees = new Stack<Employee>(); // Creates stack named employees 
             employees.Push(employee1); // Places object in stack
             employees.Push(employee2);
@@ -32,25 +34,40 @@
 
 
             Console.WriteLine("--------------------------------------------------------" +
-                "\n Retrive using pop method");
+                "\nRetrive using pop method");
 
             while (employees.Count > 0) // Loops through until stack is empty 
             {
                 Employee employee = employees.Pop(); //returns last object before it removes it from the stack
 
                 Console.WriteLine(
-                  $"Name:{employee.Name} - " +
-                  $"Gender:{employee.Gender} - " +
-                  $"ID:{employee.Id} - " +
-                  $"Salary:{employee.Salary}kr\n");
-                Console.WriteLine($"Items left in stack: {employees.Count}");
+                  $"\nName:{employee.Name} - " +
+                  $" Gender:{employee.Gender} - " +
+                  $" ID:{employee.Id} - " +
+                  $" Salary:{employee.Salary}kr - " +
+                  $" Items left in stack: {employees.Count}\n");
 
-                employees.Push(employee1); // Places object in stack
-                employees.Push(employee2);
-                employees.Push(employee3);
-                employees.Push(employee4);
-                employees.Push(employee5);
+
             }
+
+
+            employees.Push(employee1); // Places object in stack
+            employees.Push(employee2);
+            employees.Push(employee3);
+            employees.Push(employee4);
+            employees.Push(employee5);
+
+            Console.WriteLine("--------------------------------------------------------" +
+            "\nRetrive using peek method.");
+
+            Employee topEmployee = employees.Peek();
+
+            Console.WriteLine(
+                 $"\nName:{topEmployee.Name} - " +
+                 $" Gender:{topEmployee.Gender} - " +
+                 $" ID:{topEmployee.Id} - " +
+                 $" Salary:{topEmployee.Salary}kr - " +
+                 $" Items left in stack: {employees.Count}\n");
         }
 
 
