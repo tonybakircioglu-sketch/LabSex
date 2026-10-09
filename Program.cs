@@ -19,14 +19,15 @@
             employees.Push(employee5);
 
             foreach(Employee employee in employees)
-            {
-                Console.WriteLine($"Namn:{employee.Name}. " +
-                    $"Kön:{employee.Gender}. " +
-                    $"ID nr:{employee.Id}. " +
-                    $"Lön:{employee.Salary}kr. ");
+           
+                Console.WriteLine($"Items left in stack: {employees.Count}\n"+
+                    $"Name:{employee.Name} - " +
+                    $"Gender:{employee.Gender} - " +
+                    $"ID:{employee.Id} - " +
+                    $"Salary:{employee.Salary}kr\n");
             }
 
 
         }
     }
-}
+
