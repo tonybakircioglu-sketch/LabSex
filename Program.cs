@@ -75,7 +75,8 @@
                  $" Salary:{topEmployee.Salary}kr - " +
                  $" Items left in stack: {employees.Count}\n");
 
-
+            Console.WriteLine("--------------------------------------------------------" +
+            "\nLIST:");
             List<Employee> employeesList = new List<Employee>(); //creates list 
 
             employeesList.Add(employee6); //adds objects to list
@@ -83,6 +84,7 @@
             employeesList.Add(employee8);
             employeesList.Add(employee9);
             employeesList.Add(employee10);
+
 
             if (employeesList.Contains(employee7)) //contains() finds specific object 
             {
@@ -92,6 +94,9 @@
             {
                 Console.WriteLine("Employee 7 object does not exist in the list.");
             }
+            Console.WriteLine("--------------------------------------------------------" +
+            "\nFind first male employee:");
+        
 
             Employee male = employeesList.Find(employee => employee.Gender == "Male"); // finds first object with the gender "male"
 
@@ -102,6 +107,16 @@
                     $"Kön:{male.Gender}. " +
                     $"ID nr:{male.Id}. " +
                     $"Lön:{male.Salary}kr. ");
+            }
+            Console.WriteLine("--------------------------------------------------------" +
+            "\nFind all male employees in list:");
+            List<Employee> males = employeesList.FindAll(employee => employee.Gender == "Male"); // finds all males
+            foreach (Employee employee in males)
+            {
+                Console.WriteLine($"Name: {employee.Name} - " +
+                                  $"Gender: {employee.Gender} - " +
+                                  $"ID: {employee.Id} - " +
+                                  $"Salary: {employee.Salary} kr");
             }
         }
     }
