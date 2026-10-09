@@ -74,7 +74,15 @@
                  $" ID:{topEmployee.Id} - " +
                  $" Salary:{topEmployee.Salary}kr - " +
                  $" Items left in stack: {employees.Count}\n");
-        
+
+
+            List<Employee> employeesList = new List<Employee>(); //creates list 
+
+            employeesList.Add(employee6); //adds objects to list
+            employeesList.Add(employee7);
+            employeesList.Add(employee8);
+            employeesList.Add(employee9);
+            employeesList.Add(employee10);
 
             if (employeesList.Contains(employee7))
             {
@@ -96,8 +104,5 @@
                     $"Lön:{male.Salary}kr. ");
             }
         }
-
-
     }
 }
-
