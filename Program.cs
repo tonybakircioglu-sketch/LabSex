@@ -45,13 +45,13 @@
             while (employees.Count > 0) // Loops through until stack is empty 
             foreach (Employee employee in employees)
             {
-                Employee employee = employees.Pop(); //returns last object before it removes it from the stack
+                Employee person = employees.Pop(); //returns last object before it removes it from the stack
 
                 Console.WriteLine(
-                  $"\nName:{employee.Name} - " +
-                  $" Gender:{employee.Gender} - " +
-                  $" ID:{employee.Id} - " +
-                  $" Salary:{employee.Salary}kr - " +
+                  $"\nName:{person.Name} - " +
+                  $" Gender:{person.Gender} - " +
+                  $" ID:{person.Id} - " +
+                  $" Salary:{person.Salary}kr - " +
                   $" Items left in stack: {employees.Count}\n");
 
 
