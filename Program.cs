@@ -4,11 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Employee employee1 = new Employee(14564, 30000, "Tony", "Male");
+            Employee employee1 = new Employee(14564, 30000, "Tony", "Male"); //object in stack
             Employee employee2 = new Employee(14565, 39000, "Kevin", "Male");
             Employee employee3 = new Employee(14566, 29000, "Anton", "Male");
             Employee employee4 = new Employee(14567, 32500, "Johanna", "Female");
             Employee employee5 = new Employee(14568, 38000, "Anna", "Female");
+
+            Employee employee6 = new Employee(14570, 40000, "Melker", "Male"); //object in list
+            Employee employee7 = new Employee(14571, 39000, "Andrea", "Female");
+            Employee employee8 = new Employee(14572, 27000, "Ellinor", "Female");
+            Employee employee9 = new Employee(14573, 50000, "Johan", "Male");
+            Employee employee10 = new Employee(14574, 36000, "Martina", "Female");
 
 
             Stack<Employee> employees = new Stack<Employee>();
@@ -27,10 +33,14 @@
             }
 
 
+            List<Employee> employeesList = new List<Employee>(); //creates list 
+
+            employeesList.Add(employee6); //adds objects to list
+            employeesList.Add(employee7);
+            employeesList.Add(employee8);
+            employeesList.Add(employee9);
+            employeesList.Add(employee10);
+
         }
-    
-
-                List<Employee> employees = new List<Employee>(); //Creates list group called employees
-
     }
 }
