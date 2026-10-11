@@ -4,13 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Employee employee1 = new Employee(14564, 30000, "Tony", "Male"); //creates objects with Employee class
+            Employee employee1 = new Employee(14564, 30000, "Tony", "Male"); //creates objects with Employee class for the stack in part 1
             Employee employee2 = new Employee(14565, 39000, "Kevin", "Male");
             Employee employee3 = new Employee(14566, 29000, "Anton", "Male");
             Employee employee4 = new Employee(14567, 32500, "Johanna", "Female");
             Employee employee5 = new Employee(14568, 38000, "Anna", "Female");
 
-            Employee employee6 = new Employee(14570, 40000, "Melker", "Male"); //object in list
+            Employee employee6 = new Employee(14570, 40000, "Melker", "Male"); //creates 5 objects for the list in part 2 list
             Employee employee7 = new Employee(14571, 39000, "Andrea", "Female");
             Employee employee8 = new Employee(14572, 27000, "Ellinor", "Female");
             Employee employee9 = new Employee(14573, 50000, "Johan", "Male");
@@ -26,7 +26,7 @@
             employees.Push(employee4);
             employees.Push(employee5);
 
-            Console.WriteLine("LAB 6: OOP GENERIC COLLECTIONS" +
+            Console.WriteLine("LAB 6: OOP GENERIC COLLECTIONS\n---------DEL 1----------" +
                             "\n--------------------------------------------------------");
 
 
@@ -84,9 +84,18 @@
                  $" Salary:{topEmployee2.Salary}kr - " +
                  $" Items left in stack: {employees.Count}\n");
 
+            if (employees.Contains(employee3))
+            {
+                Console.WriteLine("Emp3 is in stack.");
+            }
+            else
+            {
+                Console.WriteLine("Emp3 is not in stack.");
+            }
 
+            //DEL 2 ---------------------------
             Console.WriteLine("--------------------------------------------------------" +
-            "\nLIST:");
+            "\n\n\n---------DEL 2---------- \nLIST:"+ "\n--------------------------------------------------------");
             List<Employee> employeesList = new List<Employee>(); //creates list 
 
             employeesList.Add(employee6); //adds objects to list
