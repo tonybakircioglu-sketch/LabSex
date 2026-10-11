@@ -75,6 +75,16 @@
                  $" Salary:{topEmployee.Salary}kr - " +
                  $" Items left in stack: {employees.Count}\n");
 
+            Employee topEmployee2 = employees.Peek();
+
+            Console.WriteLine(
+                 $"\nName:{topEmployee2.Name} - " +
+                 $" Gender:{topEmployee2.Gender} - " +
+                 $" ID:{topEmployee2.Id} - " +
+                 $" Salary:{topEmployee2.Salary}kr - " +
+                 $" Items left in stack: {employees.Count}\n");
+
+
             Console.WriteLine("--------------------------------------------------------" +
             "\nLIST:");
             List<Employee> employeesList = new List<Employee>(); //creates list 
@@ -86,13 +96,13 @@
             employeesList.Add(employee10);
 
 
-            if (employeesList.Contains(employee7)) //contains() finds specific object 
+            if (employeesList.Contains(employee2)) //contains() finds specific object 
             {
-                Console.WriteLine("Employee 7 object exists in the list.");
+                Console.WriteLine("Employee2 object exists in the list.");
             }
             else
             {
-                Console.WriteLine("Employee 7 object does not exist in the list.");
+                Console.WriteLine("Employee2 object does not exist in the list.");
             }
             Console.WriteLine("--------------------------------------------------------" +
             "\nFind first male employee:");
